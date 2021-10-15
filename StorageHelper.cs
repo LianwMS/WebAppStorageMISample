@@ -20,15 +20,13 @@ namespace WebStorageSample
                 await containerClient.CreateIfNotExistsAsync();
 
                 BlobClient blobClient = containerClient.GetBlobClient(blobName);
-                if (await blobClient.ExistsAsync())
-                {
-                    // Upload text to a new block blob.
-                    byte[] byteArray = Encoding.ASCII.GetBytes(blobContents);
 
-                    using (MemoryStream stream = new MemoryStream(byteArray))
-                    {
-                        await blobClient.UploadAsync(stream, overwrite: true);
-                    }
+                // Upload text to a new block blob.
+                byte[] byteArray = Encoding.ASCII.GetBytes(blobContents);
+
+                using (MemoryStream stream = new MemoryStream(byteArray))
+                {
+                    await blobClient.UploadAsync(stream, overwrite: true);
                 }
             }
             catch (Exception e)
