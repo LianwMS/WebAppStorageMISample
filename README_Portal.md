@@ -33,38 +33,39 @@ Having issues? [Let us know](https://aka.ms/DjangoCLITutorialHelp).
 
 ## 2. Create a Resource Group
 
-[/img/createrg.jpg]
+![Create Resource Group](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createrg.jpg?raw=true)
 
 ## 3. Create Azure App Service
 
 Create App Service Plan:
 Go to resource group and +Create->App Service Plan
-[/img/createwebappplan.jpg]
+![Create Web App Plan](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createwebappplan.jpg?raw=true)
 
 Create App Service:
 Go to resource group and +Create->Web App
-[/img/createwebapp.jpg]
+![Create Web App](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createwebapp.jpg?raw=true)
+
 
 ## 4. Create Azure Storage:
 Go to resource group and +Create->Storage account
-[/img/createsa.jpg]
+![Create Storage Account](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createsa.jpg?raw=true)
 
 ## 5. Build Connection 
 Go to web app resource select Service Connector (Preview) toc:
-[/img/toctab.jpg]
+![Select Service Connector Tab](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/toctab.jpg?raw=true)
 
 Create connector:
-[/img/create1.jpg]
+![Create Step 1](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createsc1.jpg?raw=true)
 
-[/img/create2.jpg]
+![Create Step 2](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createsc2.jpg?raw=true)
 
-[/img/create3.jpg]
+![Create Step 3](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createsc3.jpg?raw=true)
 
-[/img/creating.jpg]
+![Creating](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/creating.jpg?raw=true)
 
-[/img/created.jpg]
+![Created](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/created.jpg?raw=true)
 
-[/img/created2.jpg]
+![Created Show](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/created2.jpg?raw=true)
 
 ## 6. Clone or download the sample app
 
@@ -73,10 +74,10 @@ Clone the sample repository:
 git clone https://github.com/LianwMS/WebAppStorageMISample.git
 ```
 Publish the sample project
-[/img/publish.jpg]
+![Publish](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/publish.jpg?raw=true)
 
 ## 7. Validation
 https://webappstoragemisampleportal.azurewebsites.net/
 You will see "Hello Resource Connector! Current is {UTC Time Now}."
-[/img/validate.jpg]
+![Validate](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/validate.jpg?raw=true)
 
