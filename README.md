@@ -54,8 +54,6 @@ Having issues? [Let us know](https://aka.ms/DjangoCLITutorialHelp).
 
 ## 2. Clone or download the sample app
 
-# [Git clone](#tab/clone)
-
 Clone the sample repository:
 ```terminal
 git clone https://github.com/LianwMS/WebAppStorageMISample.git
