@@ -369,3 +369,4 @@ src/Cupertino.Web/Properties/serviceDependencies.*.json
 /src/Microsoft.Cupertino.ResourceProvider/Properties/serviceDependencies.*.json
 
 .azure/
+**/ServiceDependencies/
