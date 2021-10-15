@@ -58,29 +58,31 @@ Having issues? [Let us know](https://aka.ms/DjangoCLITutorialHelp).
 
 Clone the sample repository:
 ```terminal
-git clone https://github.com/xfz11/ConnectorSampleCode/tree/master/Confluent
+git clone https://github.com/LianwMS/WebAppStorageMISample.git
 ```
 
-## 3. Create Resource Group
+## 3. Create App Service 
+Go to the root folder of repository:
 ```terminal
-az group create --name WebAppStorageMISample -l eastus
+cd WebAppStorageMISample
+```
+
+Create the webapp use webapp up:
+```terminal
+az webapp up --name WebAPPStorageMISample --sku B1 --location eastus
 ```
 
 ## 4. Create Azure Storage
 ```terminal
-az storage account create --name storageforwebappsample --resource-group WebAppStorageMISample --sku Standard_RAGRS --https-only
+az storage account create --name storageforwebappsample --resource-group {rg_name} --sku Standard_RAGRS --https-only
 ```
 
-## 5. Create App Service 
+## 5. Build Connection
 ```terminal
-az webapp up --name WebAPPStorageMISample --sku B1
+az webapp connection create storage-blob -g {rg_name} -n WebAPPStorageMISample --tg {rg_name} --account storageforwebappsample --system-identity
 ```
 
-## 6. Build and Deploy the App
+## 6. Validation
+https://webappstoragemisample.azurewebsites.net/
+You will see "Hello Resource Connector! Current is {UTC Time Now}."
 
-
-## 7. Validation
-Get spring cloud app's endpoint on Portal
-access the url <app endpoint>/produce by browser
-You will see "10 messages were produced to topic test1"
-Then go to the Confluent portal and the topic's page will show production throughput
