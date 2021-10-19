@@ -9,21 +9,14 @@ ms.topic: tutorial
 ms.date: 10/28/2021
 zone_pivot_groups: 
 ---
-# Tutorial: Deploy a Web Application Connected to Azure Storage Blob with Service Connector
+# Tutorial: Deploy an ASP.Net Web Application Connected to Azure Storage Blob with Service Connector
 
-::: zone pivot=""
-
-This tutorial shows .
-
-In this tutorial, you use the Azure CLI to complete the following tasks:
-
-> [!div class="checklist"]
-> * Set up
-
+In this tutorial, you use the Azure portal to complete the following tasks:
+* Create an ASP.Net App application.
+* Create a storage account and an Azure Blob Storage container.
+* Deploy code to Azure App Service and connect to storage with managed identity using Service Connector in Azure Portal.
 
 You can also use the [Azure cli version of this tutorial](/README.md).
-
-:::zone-end
 
 ## 1. Set up your initial environment
 
@@ -31,26 +24,14 @@ You can also use the [Azure cli version of this tutorial](/README.md).
 
 Having issues? [Let us know](https://aka.ms/DjangoCLITutorialHelp).
 
-## 2. Create a Resource Group
+## 2. Create Azure App Service
 
-![Create Resource Group](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createrg.jpg?raw=true)
+Please follow the doc [Quickstart: Deploy an ASP.NET web app](https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=netcore31&pivots=development-environment-vs) to create an ASP.Net web application
 
-## 3. Create Azure App Service
+## 3. Create Azure Storage:
+Please follow the doc [Create a storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal) to create a storage account.
 
-Create App Service Plan:
-Go to resource group and +Create->App Service Plan
-![Create Web App Plan](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createwebappplan.jpg?raw=true)
-
-Create App Service:
-Go to resource group and +Create->Web App
-![Create Web App](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createwebapp.jpg?raw=true)
-
-
-## 4. Create Azure Storage:
-Go to resource group and +Create->Storage account
-![Create Storage Account](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createsa.jpg?raw=true)
-
-## 5. Build Connection 
+## 4. Build Connection 
 Go to web app resource select Service Connector (Preview) toc:
 ![Select Service Connector Tab](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/toctab.jpg?raw=true)
 
@@ -67,7 +48,7 @@ Create connector:
 
 ![Created Show](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/created2.jpg?raw=true)
 
-## 6. Clone or download the sample app
+## 5. Clone or download the sample app
 
 Clone the sample repository:
 ```terminal
@@ -76,7 +57,7 @@ git clone https://github.com/LianwMS/WebAppStorageMISample.git
 Publish the sample project
 ![Publish](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/publish.jpg?raw=true)
 
-## 7. Validation
+## 6. Validation
 https://webappstoragemisampleportal.azurewebsites.net/
 You will see "Hello Resource Connector! Current is {UTC Time Now}."
 ![Validate](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/validate.jpg?raw=true)
