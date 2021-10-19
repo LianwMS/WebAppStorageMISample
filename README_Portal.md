@@ -50,19 +50,18 @@ In Notigications tab, it will show that the creation start.
 Afer creation started, we can find the connection descriptions "Service Connector (Preview)" tab.
 ![Created](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/created.jpg?raw=true)
 
-
-
-## 5. Clone or download the sample app
+## 5. Clone or download the sample app and publish
 
 Clone the sample repository:
 ```terminal
 git clone https://github.com/LianwMS/WebAppStorageMISample.git
 ```
-Publish the sample project
+Open WebStorageSample.csproj with Visual Studio 2019 and Publish the sample project by visual studio [Publish your web app](https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=netcore31&pivots=development-environment-vs#publish-your-web-app)
 ![Publish](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/publish.jpg?raw=true)
 
 ## 6. Validation
-https://webappstoragemisampleportal.azurewebsites.net/
-You will see "Hello Resource Connector! Current is {UTC Time Now}."
+Click the URL in Overview tab from the Web App portal.
+
+You will see "Hello Service Connector! UTC Now: {UTC Time Now}."
 ![Validate](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/validate.jpg?raw=true)
 
