@@ -32,21 +32,25 @@ Please follow the doc [Quickstart: Deploy an ASP.NET web app](https://docs.micro
 Please follow the doc [Create a storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal) to create a storage account.
 
 ## 4. Build Connection 
-Go to web app resource select Service Connector (Preview) toc:
+Go to web app resource select "Service Connector (Preview)" tab, and Click "Create" button.
 ![Select Service Connector Tab](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/toctab.jpg?raw=true)
 
-Create connector:
+Select the target resource details including storage subscription, resource type, storage account and client type as following. Click "Next: Authentication"
 ![Create Step 1](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createsc1.jpg?raw=true)
 
+In Authentication tab select "System assigned managed identity" and click "Next: Review + Create"
 ![Create Step 2](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createsc2.jpg?raw=true)
 
+After review the configure, click "Create"
 ![Create Step 3](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createsc3.jpg?raw=true)
 
+In Notigications tab, it will show that the creation start.
 ![Creating](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/creating.jpg?raw=true)
 
+Afer creation started, we can find the connection descriptions "Service Connector (Preview)" tab.
 ![Created](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/created.jpg?raw=true)
 
-![Created Show](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/created2.jpg?raw=true)
+
 
 ## 5. Clone or download the sample app
 
