@@ -61,7 +61,7 @@ Open WebStorageSample.csproj with Visual Studio 2019 and Publish the sample proj
 
 ## 6. Validation
 Click the URL in Overview tab from the Web App portal.
-
+![WebApp](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/webapp.jpg?raw=true)
 You will see "Hello Service Connector! UTC Now: {UTC Time Now}."
 ![Validate](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/validate.jpg?raw=true)
 
