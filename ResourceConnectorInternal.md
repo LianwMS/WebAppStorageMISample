@@ -31,3 +31,20 @@ The following items will be checked while validating the connection:
 
 # Delete Connection
 The connection information on source resource will be deleted when deleting connection. 
+
+# Connection Configurations
+Once a service connection is created, the connection configuration will be set to the source service. 
+In portal, it will be shown by click “Service Connector (Preview)” and expand connection by click the connection name. 
+
+![Created](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/created.jpg?raw=true)
+
+In cli, it will be listed by
+
+```terminal
+az webapp connection list-configuration -g {webapp_rg} -n {webapp_name} --connection {service_connection_name}
+```
+In your application code, you can read the connection configuration from environment variables. Here is the sample code to describe how to use them. 
+
+The naming rule of the configuration are as following. 
+* For the same type of target resource, the key name of the first connection configuration will be format as {Cloud}\_{Type}\_{Name}. E.g. AZURE_STORAGEBLOB_ RESOURCEENDPOINT, CONFLUENTCLOUD_KAFKA_BOOTSTRAPSERVER. 
+* The key name of the second connection configuration will be format as {Cloud}\_{Type}\_{Connection Name}\_{Name}. E.g. AZURE_STORAGEBLOB_ CONN2_RESOURCEENDPOINT, CONFLUENTCLOUD_KAFKA_ CONN2_BOOTSTRAPSERVER.
