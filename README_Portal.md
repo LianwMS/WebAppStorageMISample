@@ -16,7 +16,7 @@ In this tutorial, you use the Azure portal to complete the following tasks:
 * Create a storage account and an Azure Blob Storage container.
 * Deploy code to Azure App Service and connect to storage with managed identity using Service Connector in Azure Portal.
 
-You can also use the [Azure cli version of this tutorial](/README.md).
+You can also use the [Azure CLI version of this tutorial](/README.md).
 
 ## 1. Set up your initial environment
 
@@ -44,10 +44,10 @@ In Authentication tab select "System assigned managed identity" and click "Next:
 After review the configure, click "Create"
 ![Create Step 3](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/createsc3.jpg?raw=true)
 
-In Notigications tab, it will show that the creation start.
+In Notifications tab, it will show that the creation start.
 ![Creating](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/creating.jpg?raw=true)
 
-Afer creation started, we can find the connection descriptions "Service Connector (Preview)" tab.
+After creation started, we can find the connection descriptions "Service Connector (Preview)" tab.
 ![Created](https://github.com/LianwMS/WebAppStorageMISample/blob/main/img/created.jpg?raw=true)
 
 ## 5. Clone or download the sample app and publish
